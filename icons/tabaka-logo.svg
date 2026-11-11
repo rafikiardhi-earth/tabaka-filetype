@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><clipPath id="c"><rect width="200" height="200" rx="38"/></clipPath></defs><g clip-path="url(#c)">
+  <rect width="200" height="200" fill="#D9BC8A"/>
+  <path d="M0 120 H200 V200 H0 Z" fill="#B5793A"/>
+  <path d="M0 146 Q50 138 100 145 T200 142 V200 H0 Z" fill="#7A4E2C"/>
+  <path d="M0 172 Q60 165 110 173 T200 168 V200 H0 Z" fill="#4A2E1C"/>
+  <g fill="none" stroke="#fff"><path d="M0 120 H200" stroke-width="3.5"/><path d="M0 146 Q50 138 100 145 T200 142" stroke-width="1.6"/><path d="M0 172 Q60 165 110 173 T200 168" stroke-width="1.6"/></g>
+  <!-- acacia: one flat-topped canopy, branching trunk, fanned roots -->
+  <g fill="#fff">
+    <path transform="translate(0,-10)" d="M48 38 Q100 25 152 38 Q160 42 159 48 Q173 53 175 62 Q176 72 150 74 Q100 79 50 74 Q24 72 25 62 Q27 53 41 48 Q40 42 48 38 Z"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 120 Q99.5 104 98 87" stroke-width="6.5"/>
+    <path d="M98 89 Q90 78 80 63 M98.5 88 Q108 76 119 62" stroke-width="4.8"/>
+    <path d="M98.5 90 Q101 77 102 63" stroke-width="3.2"/>
+    <path d="M96 83 Q84 74 64 64 M103.5 80 Q121 72 141 63" stroke-width="3"/>
+    <path d="M85 74 Q78 70 73 65 M113 71 Q120 68 127 64 M82 72 Q66 68 52 63 M121 70 Q136 66 151 62" stroke-width="1.9"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round">
+    <path d="M100 124 Q70 130 46 147"/>
+    <path d="M100 124 Q130 130 154 147"/>
+    <path d="M100 127 Q82 142 69 166"/>
+    <path d="M100 127 Q118 142 131 166"/>
+    <path d="M100 122 V178"/>
+  </g>
+</g></svg>
