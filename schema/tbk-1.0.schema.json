@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tabaka.org/schema/tbk-1.0.schema.json",
+
+  "title": "Tabaka Package",
+  "description": "Tabaka Knowledge Package (TBK) Version 1.0",
+
+  "type": "object",
+
+  "required": [
+    "schema",
+    "schemaVersion",
+    "packageId",
+    "created",
+    "source",
+    "content"
+  ],
+
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "tabaka"
+    },
+
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^1\\.[0-9]+\\.[0-9]+$"
+    },
+
+    "packageId": {
+      "type": "string"
+    },
+
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "source": {
+      "type": "object",
+      "required": [
+        "application",
+        "document"
+      ],
+
+      "properties": {
+        "application": {
+          "type": "string"
+        },
+
+        "document": {
+          "type": "string"
+        },
+
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+
+    "content": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/contentBlock"
+      }
+    },
+
+    "provenance": {
+      "type": "object"
+    },
+
+    "integrity": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+
+    "metadata": {
+      "type": "object"
+    }
+  },
+
+  "$defs": {
+    "contentBlock": {
+      "type": "object",
+
+      "required": [
+        "type",
+        "status",
+        "itemCount",
+        "data"
+      ],
+
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+
+        "status": {
+          "type": "string",
+
+          "enum": [
+            "unprocessed",
+            "completed",
+            "empty",
+            "failed"
+          ]
+        },
+
+        "itemCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+
+        "data": {
+          "type": "array"
+        },
+
+        "error": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

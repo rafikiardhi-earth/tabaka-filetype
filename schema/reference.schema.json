@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tabaka.org/registry/reference.schema.json",
+
+  "title": "Tabaka Reference Content Type",
+  "description": "Canonical Tabaka bibliographic reference record.",
+
+  "type": "object",
+
+  "required": [
+    "title"
+  ],
+
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "authors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/author"
+      },
+      "default": []
+    },
+
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+
+    "journal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "volume": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "issue": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "pages": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "isbn": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+
+    "abstract": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "citation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+
+    "metadata": {
+      "type": "object",
+      "default": {}
+    }
+  },
+
+  "additionalProperties": true,
+
+  "$defs": {
+    "author": {
+      "type": "object",
+
+      "required": [
+        "name"
+      ],
+
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+
+        "orcid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "affiliation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "provenance": {
+      "type": "object",
+
+      "properties": {
+        "source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+
+        "extractionMethod": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "retrievedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+
+      "additionalProperties": true
+    }
+  }
+}

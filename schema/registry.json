@@ -1,0 +1,56 @@
+{
+  "contentTypes": {
+
+    "reference": {
+      "title": "Bibliographic Reference",
+      "version": "1.0.0",
+      "status": "core",
+      "schema": "reference.schema.json",
+
+      "supportedApplications": [
+        "Soma",
+        "Word",
+        "Excel",
+        "R"
+      ]
+    },
+
+    "table": {
+      "title": "Structured Table",
+      "version": "1.0.0",
+      "status": "core",
+      "schema": "table.schema.json",
+
+      "supportedApplications": [
+        "Excel",
+        "R",
+        "Soma"
+      ]
+    },
+
+    "soil-profile": {
+      "title": "Soil Profile",
+      "version": "1.0.0",
+      "status": "core",
+      "schema": "soil-profile.schema.json",
+
+      "supportedApplications": [
+        "Asili",
+        "Excel",
+        "R"
+      ]
+    },
+
+    "registryVersion": "1.0.0",
+
+    "branding": {
+      "name": "Tabaka",
+      "extension": ".tbk",
+      "mimeType": "application/tabaka+json",
+      "icon": "tabaka-logo.ico"
+    },
+
+    "contentTypes": {
+    }
+  }
+}

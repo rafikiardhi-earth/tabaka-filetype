@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Tabaka Table",
+
+  "type": "object",
+
+  "required": [
+    "columns",
+    "rows"
+  ],
+
+  "properties": {
+
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+
+    "provenance": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

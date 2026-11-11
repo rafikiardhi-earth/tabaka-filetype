@@ -1,0 +1,31 @@
+{
+  "schema": "tabaka",
+  "schemaVersion": "1.0.0",
+
+  "packageId": "invalid_status",
+
+  "created": "2026-01-01T00:00:00Z",
+
+  "source": {
+    "application": "Test",
+    "document": "test"
+  },
+
+  "content": {
+    "refs": {
+      "type": "reference",
+
+      "status": "empty",
+
+      "itemCount": 1,
+
+      "data": [
+        {
+          "title": "Should Not Exist"
+        }
+      ],
+
+      "error": null
+    }
+  }
+}

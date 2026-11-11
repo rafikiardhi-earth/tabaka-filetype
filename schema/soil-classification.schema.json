@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Tabaka Soil Classification",
+
+  "type": "object",
+
+  "required": [
+    "system",
+    "classification"
+  ],
+
+  "properties": {
+
+    "system": {
+      "type": "string"
+    },
+
+    "classification": {
+      "type": "string"
+    },
+
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+
+    "rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+
+    "provenance": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

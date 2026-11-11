@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Tabaka Soil Profile",
+
+  "type": "object",
+
+  "required": [
+    "horizons"
+  ],
+
+  "properties": {
+
+    "profileId": {
+      "type": ["string", "null"]
+    },
+
+    "classification": {
+      "type": ["string", "null"]
+    },
+
+    "location": {
+      "type": ["object", "null"]
+    },
+
+    "horizons": {
+
+      "type": "array",
+
+      "items": {
+
+        "type": "object",
+
+        "required": [
+          "designation",
+          "topDepth",
+          "bottomDepth"
+        ],
+
+        "properties": {
+
+          "designation": {
+            "type": "string"
+          },
+
+          "topDepth": {
+            "type": "number"
+          },
+
+          "bottomDepth": {
+            "type": "number"
+          },
+
+          "description": {
+            "type": ["string", "null"]
+          },
+
+          "color": {
+            "type": ["string", "null"]
+          },
+
+          "texture": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    },
+
+    "provenance": {
+      "type": ["object", "null"]
+    }
+  }
+}

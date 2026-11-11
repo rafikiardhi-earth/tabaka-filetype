@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Tabaka Statistical Results",
+
+  "type": "object",
+
+  "required": [
+    "method"
+  ],
+
+  "properties": {
+
+    "method": {
+      "type": "string"
+    },
+
+    "results": {
+      "type": "object"
+    },
+
+    "pValue": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+
+    "confidenceInterval": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+
+    "provenance": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

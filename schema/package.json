@@ -1,0 +1,16 @@
+{
+  "name": "tabaka",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node run-validation.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
