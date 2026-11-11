@@ -1,0 +1,12 @@
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+
+/*.tbk
+  Content-Type: application/tabaka+json
+
+/schema/*.json
+  Content-Type: application/schema+json
+
+/*.js
+  Content-Type: application/javascript; charset=utf-8
